@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<adonet xmlns="http://tempuri.org/goodwxsd.xsd">
+  <customers>
+    <Customer CustomerID="A945884D-D309-4B47-BA42-1AFF5CD035CF" FirstName="Mike" LastName="Remlinger" Address="10 Aaron Way" City="Atlanta" State="GA" Zip="30307" HomePhone="(404) 543-8765" Stamp="128" CheckedOut="0" />
+    <Customer CustomerID="11D59CB7-BF61-4540-9317-4F154D717796" FirstName="Greg" LastName="Maddux" Address="53 Peachtree Center" City="Atlanta" State="GA" Zip="30342" HomePhone="404-555-1234" Stamp="127" CheckedOut="0">
+      <Invoices>
+        <Invoice InvoiceID="463CDF10-2609-41F3-99A3-05F4CEDF9FE2" InvoiceNumber="100" InvoiceDate="2002-03-21T00:00:00" Terms="Net 10th" PO="100042" CustomerID="11D59CB7-BF61-4540-9317-4F154D717796">
+          <InvoiceItem InvoiceItemID="C7395127-891D-4ED4-8C37-D4E73BCFDF55" InvoiceID="463CDF10-2609-41F3-99A3-05F4CEDF9FE2" ProductID="4" Quantity="2" Discount="4.250000000000000e+000" />
+          <InvoiceItem InvoiceItemID="B30B585F-5FE7-48FD-B97A-E7A31BAD0D72" InvoiceID="463CDF10-2609-41F3-99A3-05F4CEDF9FE2" ProductID="2" Quantity="3" Discount="0.000000000000000e+000" />
+        </Invoice>
+        <Invoice InvoiceID="5E1E9BEB-5915-4513-8D67-0F3E0F6A81D0" InvoiceNumber="101" InvoiceDate="2002-03-31T00:00:00" Terms="Net 30" PO="100104" CustomerID="11D59CB7-BF61-4540-9317-4F154D717796">
+          <InvoiceItem InvoiceItemID="4150D81C-79CB-458B-A303-047E3CD6DBEA" InvoiceID="5E1E9BEB-5915-4513-8D67-0F3E0F6A81D0" ProductID="1" Quantity="1" Discount="0.000000000000000e+000" />
+        </Invoice>
+      </Invoices>
+    </Customer>
+    <Customer CustomerID="2541729B-AFFF-482E-A4A9-A2E6BBCFEAB4" FirstName="John" LastName="Smoltz" Address="100 Henry Aaron Way" City="Atlanta" State="GA" Zip="30307" HomePhone="404-555-1236" Stamp="107" CheckedOut="0">
+      <Invoices>
+        <Invoice InvoiceID="9847592F-616D-4CCF-9147-D51A86B731C0" InvoiceNumber="103" InvoiceDate="2002-03-27T00:00:00" Terms="Net 30" PO="100304" CustomerID="2541729B-AFFF-482E-A4A9-A2E6BBCFEAB4">
+          <InvoiceItem InvoiceItemID="42426D45-E39A-467C-8017-2DC52C7BA58B" InvoiceID="9847592F-616D-4CCF-9147-D51A86B731C0" ProductID="1" Quantity="1" Discount="0.000000000000000e+000" />
+        </Invoice>
+        <Invoice InvoiceID="A931D7DC-9806-4403-8F71-F479466EE953" InvoiceNumber="104" InvoiceDate="2002-04-01T00:00:00" Terms="Net 30" PO="100594" CustomerID="2541729B-AFFF-482E-A4A9-A2E6BBCFEAB4">
+          <InvoiceItem InvoiceItemID="A3895169-8E34-4ADF-9CC1-9C3EC9814549" InvoiceID="A931D7DC-9806-4403-8F71-F479466EE953" ProductID="3" Quantity="1" Discount="0.000000000000000e+000" />
+        </Invoice>
+      </Invoices>
+    </Customer>
+  </customers>
+  <Product ProductID="1" Description="Baseball Bat, Slugger" Vendor="Louisville" Cost="11.5000" Price="19.9900" />
+  <Product ProductID="2" Description="Baseball Mitt" Vendor="Wilson" Cost="24.7500" Price="29.9900" />
+  <Product ProductID="3" Description="Baseball" Vendor="Rawlings" Cost="0.9500" Price="1.7500" />
+  <Product ProductID="4" Description="Basketball" Vendor="Rawlings" Cost="11.5400" Price="14.5000" />
+</adonet>

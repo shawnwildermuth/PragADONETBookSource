@@ -1,0 +1,75 @@
+<?xml version="1.0" ?>
+<xs:schema id="adonet" targetNamespace="http://tempuri.org/goodwxsd.xsd" xmlns:mstns="http://tempuri.org/goodwxsd.xsd" xmlns="http://tempuri.org/goodwxsd.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="adonet" msdata:IsDataSet="true" msdata:EnforceConstraints="False">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="customers">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Customer" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Invoices" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Invoice" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="InvoiceItem" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:attribute name="InvoiceItemID" form="unqualified" type="xs:string" />
+                                    <xs:attribute name="InvoiceID" form="unqualified" type="xs:string" />
+                                    <xs:attribute name="ProductID" form="unqualified" type="xs:string" />
+                                    <xs:attribute name="Quantity" form="unqualified" type="xs:string" />
+                                    <xs:attribute name="Discount" form="unqualified" type="xs:string" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="InvoiceID" form="unqualified" type="xs:string" />
+                              <xs:attribute name="InvoiceNumber" form="unqualified" type="xs:string" />
+                              <xs:attribute name="InvoiceDate" form="unqualified" type="xs:string" />
+                              <xs:attribute name="Terms" form="unqualified" type="xs:string" />
+                              <xs:attribute name="PO" form="unqualified" type="xs:string" />
+                              <xs:attribute name="CustomerID" form="unqualified" type="xs:string" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="CustomerID" form="unqualified" type="xs:string" />
+                  <xs:attribute name="FirstName" form="unqualified" type="xs:string" />
+                  <xs:attribute name="LastName" form="unqualified" type="xs:string" />
+                  <xs:attribute name="Address" form="unqualified" type="xs:string" />
+                  <xs:attribute name="City" form="unqualified" type="xs:string" />
+                  <xs:attribute name="State" form="unqualified" type="xs:string" />
+                  <xs:attribute name="Zip" form="unqualified" type="xs:string" />
+                  <xs:attribute name="HomePhone" form="unqualified" type="xs:string" />
+                  <xs:attribute name="Stamp" form="unqualified" type="xs:string" />
+                  <xs:attribute name="CheckedOut" form="unqualified" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Product">
+          <xs:complexType>
+            <xs:attribute name="ProductID" form="unqualified" type="xs:string" />
+            <xs:attribute name="Description" form="unqualified" type="xs:string" />
+            <xs:attribute name="Vendor" form="unqualified" type="xs:string" />
+            <xs:attribute name="Cost" form="unqualified" type="xs:string" />
+            <xs:attribute name="Price" form="unqualified" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:key name="adonetKey1">
+      <xs:selector xpath=".//mstns:InvoiceItem" />
+      <xs:field xpath="@ProductID" />
+    </xs:key>
+    <xs:keyref name="InvoiceItemProduct" refer="mstns:adonetKey1">
+      <xs:selector xpath=".//mstns:Product" />
+      <xs:field xpath="@ProductID" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

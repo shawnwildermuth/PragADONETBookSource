@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<NewDataSet>
+  <Product ProductID="1" 
+          Description="Baseball Bat, Slugger" 
+          Vendor="Louisville" 
+          Cost="11.5000" 
+          InStock="1" 
+          Price="19.9900"
+  />
+  <Product ProductID="2" 
+          Description="Baseball Mitt" 
+          Vendor="Wilson" 
+          Cost="24.7500" 
+          InStock="1" 
+          Price="29.9900"
+  />
+  <Product ProductID="3" 
+          Description="Baseball" 
+          Vendor="Rawlings" 
+          Cost="0.9500" 
+          InStock="1" 
+          Price="1.7500"
+  />
+  <Product ProductID="4" 
+          Description="Basketball" 
+          Vendor="Rawlings" 
+          Cost="11.5400" 
+          InStock="1" 
+          Price="14.5000"/>
+</NewDataSet>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="CustomerTDS" targetNamespace="http://tempuri.org/ADONET.xsd" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/ADONET.xsd" xmlns:mstns="http://tempuri.org/ADONET.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="CustomerTDS" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="Customer">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CustomerID" msdata:DataType="System.Guid, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" />
+              <xs:element name="FirstName" type="xs:string" />
+              <xs:element name="LastName" type="xs:string" />
+              <xs:element name="MiddleName" type="xs:string" minOccurs="0" />
+              <xs:element name="Address" type="xs:string" minOccurs="0" />
+              <xs:element name="Apartment" type="xs:string" minOccurs="0" />
+              <xs:element name="City" type="xs:string" minOccurs="0" />
+              <xs:element name="State" type="xs:string" minOccurs="0" />
+              <xs:element name="Zip" type="xs:string" minOccurs="0" />
+              <xs:element name="HomePhone" type="xs:string" minOccurs="0" />
+              <xs:element name="BusinessPhone" type="xs:string" minOccurs="0" />
+              <xs:element name="FullName" type="xs:string" minOccurs="0" msdata:Expression="LastName + ', ' + FirstName" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Invoice">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="InvoiceID" msdata:DataType="System.Guid, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" />
+              <xs:element name="InvoiceNumber" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+              <xs:element name="InvoiceDate" type="xs:dateTime" />
+              <xs:element name="Terms" type="xs:string" minOccurs="0" />
+              <xs:element name="FOB" type="xs:string" minOccurs="0" />
+              <xs:element name="PO" type="xs:string" minOccurs="0" />
+              <xs:element name="CustomerID" msdata:DataType="System.Guid, mscorlib, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="ADONETKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Customer" />
+      <xs:field xpath="mstns:CustomerID" />
+    </xs:unique>
+    <xs:unique name="ADONETKey2" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Invoice" />
+      <xs:field xpath="mstns:InvoiceID" />
+    </xs:unique>
+    <xs:keyref name="CustomerInvoice" refer="ADONETKey1" msdata:AcceptRejectRule="Cascade" msdata:DeleteRule="Cascade" msdata:UpdateRule="Cascade">
+      <xs:selector xpath=".//mstns:Invoice" />
+      <xs:field xpath="mstns:CustomerID" />
+    </xs:keyref>
+    <xs:unique name="UniqueHomePhone">
+      <xs:selector xpath=".//mstns:Customer" />
+      <xs:field xpath="mstns:HomePhone" />
+      <xs:field xpath="mstns:BusinessPhone" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

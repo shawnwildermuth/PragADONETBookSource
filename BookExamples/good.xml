@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<NewDataSet>
+  <Customers>
+    <CustomerID>a945884d-d309-4b47-ba42-1aff5cd035cf</CustomerID>
+    <FirstName>Mike</FirstName>
+    <LastName>Remlinger</LastName>
+    <Address>10 Aaron Way</Address>
+    <City>Atlanta</City>
+    <State>GA</State>
+    <Zip>30307</Zip>
+    <HomePhone>(404) 543-8765</HomePhone>
+    <Stamp>AAAAAAAAAIA=</Stamp>
+    <CheckedOut>false</CheckedOut>
+  </Customers>
+  <Customers>
+    <CustomerID>11d59cb7-bf61-4540-9317-4f154d717796</CustomerID>
+    <FirstName>Greg</FirstName>
+    <LastName>Maddux</LastName>
+    <Address>53 Peachtree Center</Address>
+    <City>Atlanta</City>
+    <State>GA</State>
+    <Zip>30342</Zip>
+    <HomePhone>404-555-1234</HomePhone>
+    <Stamp>AAAAAAAAAH8=</Stamp>
+    <CheckedOut>false</CheckedOut>
+    <Invoices>
+      <InvoiceID>463cdf10-2609-41f3-99a3-05f4cedf9fe2</InvoiceID>
+      <InvoiceNumber>100</InvoiceNumber>
+      <InvoiceDate>2002-03-21T00:00:00.0000000-05:00</InvoiceDate>
+      <Terms>Net 10th</Terms>
+      <PO>100042</PO>
+      <CustomerID>11d59cb7-bf61-4540-9317-4f154d717796</CustomerID>
+      <InvoiceItems>
+        <InvoiceItemID>c7395127-891d-4ed4-8c37-d4e73bcfdf55</InvoiceItemID>
+        <InvoiceID>463cdf10-2609-41f3-99a3-05f4cedf9fe2</InvoiceID>
+        <ProductID>4</ProductID>
+        <Quantity>2</Quantity>
+        <Discount>4.25</Discount>
+      </InvoiceItems>
+      <InvoiceItems>
+        <InvoiceItemID>b30b585f-5fe7-48fd-b97a-e7a31bad0d72</InvoiceItemID>
+        <InvoiceID>463cdf10-2609-41f3-99a3-05f4cedf9fe2</InvoiceID>
+        <ProductID>2</ProductID>
+        <Quantity>3</Quantity>
+        <Discount>0</Discount>
+      </InvoiceItems>
+    </Invoices>
+    <Invoices>
+      <InvoiceID>5e1e9beb-5915-4513-8d67-0f3e0f6a81d0</InvoiceID>
+      <InvoiceNumber>101</InvoiceNumber>
+      <InvoiceDate>2002-03-31T00:00:00.0000000-05:00</InvoiceDate>
+      <Terms>Net 30</Terms>
+      <PO>100104</PO>
+      <CustomerID>11d59cb7-bf61-4540-9317-4f154d717796</CustomerID>
+      <InvoiceItems>
+        <InvoiceItemID>4150d81c-79cb-458b-a303-047e3cd6dbea</InvoiceItemID>
+        <InvoiceID>5e1e9beb-5915-4513-8d67-0f3e0f6a81d0</InvoiceID>
+        <ProductID>1</ProductID>
+        <Quantity>1</Quantity>
+        <Discount>0</Discount>
+      </InvoiceItems>
+    </Invoices>
+  </Customers>
+  <Customers>
+    <CustomerID>2541729b-afff-482e-a4a9-a2e6bbcfeab4</CustomerID>
+    <FirstName>John</FirstName>
+    <LastName>Smoltz</LastName>
+    <Address>100 Henry Aaron Way</Address>
+    <City>Atlanta</City>
+    <State>GA</State>
+    <Zip>30307</Zip>
+    <HomePhone>404-555-1236</HomePhone>
+    <Stamp>AAAAAAAAAGs=</Stamp>
+    <CheckedOut>false</CheckedOut>
+    <Invoices>
+      <InvoiceID>9847592f-616d-4ccf-9147-d51a86b731c0</InvoiceID>
+      <InvoiceNumber>103</InvoiceNumber>
+      <InvoiceDate>2002-03-27T00:00:00.0000000-05:00</InvoiceDate>
+      <Terms>Net 30</Terms>
+      <PO>100304</PO>
+      <CustomerID>2541729b-afff-482e-a4a9-a2e6bbcfeab4</CustomerID>
+      <InvoiceItems>
+        <InvoiceItemID>42426d45-e39a-467c-8017-2dc52c7ba58b</InvoiceItemID>
+        <InvoiceID>9847592f-616d-4ccf-9147-d51a86b731c0</InvoiceID>
+        <ProductID>1</ProductID>
+        <Quantity>1</Quantity>
+        <Discount>0</Discount>
+      </InvoiceItems>
+    </Invoices>
+    <Invoices>
+      <InvoiceID>a931d7dc-9806-4403-8f71-f479466ee953</InvoiceID>
+      <InvoiceNumber>104</InvoiceNumber>
+      <InvoiceDate>2002-04-01T00:00:00.0000000-05:00</InvoiceDate>
+      <Terms>Net 30</Terms>
+      <PO>100594</PO>
+      <CustomerID>2541729b-afff-482e-a4a9-a2e6bbcfeab4</CustomerID>
+      <InvoiceItems>
+        <InvoiceItemID>a3895169-8e34-4adf-9cc1-9c3ec9814549</InvoiceItemID>
+        <InvoiceID>a931d7dc-9806-4403-8f71-f479466ee953</InvoiceID>
+        <ProductID>3</ProductID>
+        <Quantity>1</Quantity>
+        <Discount>0</Discount>
+      </InvoiceItems>
+    </Invoices>
+  </Customers>
+</NewDataSet>
